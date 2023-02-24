@@ -9,32 +9,34 @@
 
 struct node
 {
-    int data;
+    int order_number;
+    int qty;
     struct node *nextPtr;
-};
+}order;
 
 typedef struct node Node;
 typedef struct node* NodePtr;
 
-
+/*
 void enqueue(NodePtr * head, NodePtr* tail, int x){
   Node* new_node=(NodePtr) malloc(sizeof(Node));
 if(new_node){ 
-   /* Finish queue*/
+    Finish queue
+  
   new_node->data=x;
    new_node->nextPtr=NULL;
   if(*head==NULL) *head=new_node;
   else(*tail)->nextPtr=new_node;
   *tail=new_node;
    
- }
+} 
 }
 
 
 int dequeue(NodePtr* head, NodePtr* tail){
   NodePtr t=*head;
    if(t){
-    /* Finish dequeue*/
+     Finish dequeue
      int value= t->data;
      *head = (*head)->nextPtr;
      if(!(*head)) *tail=NULL;
@@ -46,6 +48,6 @@ int dequeue(NodePtr* head, NodePtr* tail){
    return 0;
 }
 
-
+*/
 
 #endif
